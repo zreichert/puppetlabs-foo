@@ -1,0 +1,15 @@
+{
+  "name": "puppetlabs-foo",
+  "version": "1.0.0",
+  "author": "puppetlabs",
+  "summary": "Test Module",
+  "license": "Apache-2.0",
+  "source": "git@github.com:puppetlabs/puppetlabs-foo.git",
+  "project_page": "https://github.com/puppetlabs/puppetlabs-foo/",
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
