@@ -16,4 +16,13 @@ Puppet::Type.newtype(:foo_resource) do
     desc "Property number one"
     munge {|val| val.to_s }
   end
+
+  newparam(:param_two) do
+    desc "Parameter number two"
+  end
+
+  newproperty(:prop_two) do
+    desc "Property number two"
+    munge {|val| val.to_s }
+  end
 end
