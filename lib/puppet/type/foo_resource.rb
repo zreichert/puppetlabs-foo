@@ -4,6 +4,10 @@ Puppet::Type.newtype(:foo_resource) do
     defaultto :present
   end
 
+  def eval_generate
+    [Puppet::Type.type(:notify).new(:name => "Type foo_resource from the master branch")]
+  end
+
   newparam(:name, :namevar => true) do
     desc "The namevar"
   end
